@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<style>
+body{
+    background-color: #68f45e;
+    color: #003049;
+}
+.menu{
+    background-color:  rgb(221, 77, 221);
+    padding: 4px 4px 4px 400px;
+    color: white;
+}
+
+.menu a{
+
+    color: white;
+ }
+
+/*
+div{
+    border:1px solid black;
+}*/
+</style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <img src="data:image/jpeg;base64,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">
+            </div>
+            <div class="col-sm-10">
+                <h2 align="center">Marian Beach</h2>
+                <p align="center">Explore chennai create memeories</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 menu" >
+                <a href="http://www.home.com">Home</a>&nbsp;|
+            <a href="http://www.home.com">About</a>&nbsp;|
+            <a href="http://www.home.com">Gallery</a>&nbsp;|
+            <a href="http://www.him.com">Destination</a>&nbsp;|
+            <a href="http://www.home.com">FAQ</a>&nbsp;|
+            <a href="http://www.home.com">Contact Us</a>&nbsp;|
+            <a href="http://www.home.com">Sign Up</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="http://www.home.com">Profile</a></li><br>
+                    <li> <a href="http://www.home.com">Gallery</a></li><br>
+            <li><a href="http://www.home.com">Notification</a></li><br>
+            <li><a href="http://www.home.com">Contact Us</a></li>
+            <li><a href="http://www.him.com">Help Desk</a></li><br>
+            </ul>
+            </div>
+            <div class="col-sm-8">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ32QEn5dIF0dSH9avdbYLJPQ3vmt2T9xf-w-uTqLBcZuegub-h49lEwUu&s=10" width="500px">
+        
+                <h2>Marin Beach</h2>
+                <p>The Marina is a primarily sandy beach, with an average width of 300 m (980 ft)[5] and the width at the widest stretch is 437 m (1,434 ft). Bathing and swimming at the Marina are legally prohibited because of the dangers, as the undercurrent is very turbulent. It is one of the most crowded beaches in the country and attracts about 30,000 visitors a day during weekdays[6] and 50,000 visitors a day during the weekends and on holidays.[7][8][9] During summer months, about 15,000 to 20,000 people visit the beach daily.[10]</p>
+                <h2>Environment</h2>
+                <p>The Marina beach was famed for its pristine beauty, jolly ambiance, and rich ecosystems.[20] However, since the middle of the 20th century, the beach and water have become polluted.[21] Proliferation of plastic bags, human waste, and other pollutants have rendered many parts of the beach unusable. In recent years, many voluntary organizations have taken up the task of cleaning up the Marina and protecting the ecosystem. Particular efforts include protection of olive ridley turtle nests along the Neelankarai section of the beach.[22][23]</p>
+            </div>
+            <div class="col-sm-2 r">
+                
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62189.95582603057!2d80.24265334325419!3d13.04380331208272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52689bb60132bb%3A0x549cf8edf62b60a!2sMarina%20Beach!5e0!3m2!1sen!2sin!4v1781952283750!5m2!1sen!2sin" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<p>Location:	Chennai, Tamil Nadu, India</p>
+<p>Coast:	Coromandel, Bay of Bengal</p>
+<p>Demarcated:	1884; 142 years ago</p>
+<p>Type:Urban, natural sandy beach</p>
+<P>Orientation:	North–South</P>
+            </div>
+        </div>
+        
+        
+
+    
+        </div>
+        <div class="row">
+            <div class="col-sm-12 menu">
+               <p> Copyright&copy;2026 My website All right reversed</p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
